@@ -13,10 +13,10 @@ xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
         console.log(xhr.response);
 
-        let joke = JSON.parse(xhr.response);
+        let joke = JSON.parse(xhr.response);  // returns joke in object format
         console.log(joke.value);
 
-        document.getElementById('content').innerHTML = joke.value;
+        document.getElementById('content').innerHTML = joke.value;  // adds joke value to html (div)
 
     }
 }
