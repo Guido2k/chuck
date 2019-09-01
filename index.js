@@ -16,7 +16,7 @@ xhr.onreadystatechange = function() {
         let joke = JSON.parse(xhr.response);
         console.log(joke.value);
 
-        document.querySelector('div').innerHTML = joke.value;
+        document.getElementById('content').innerHTML = joke.value;
 
     }
 }
