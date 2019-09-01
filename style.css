@@ -7,7 +7,7 @@ body {
 #but {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40%;
+    text-align: center;
     
 
 }
@@ -16,10 +16,10 @@ body {
 #content {
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 24px;
-    margin-left: 10px;
-    margin-right: 10px;
+    
     margin-bottom: 25px;
     text-align: center;
+    
 
     
 
@@ -33,6 +33,9 @@ body {
 img {
     height: 320px;
     width: 365px;
+    /*border: 2px solid red;*/
+    
+    box-shadow: 12px 12px gray;
     
     
     
