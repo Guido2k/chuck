@@ -1,6 +1,44 @@
 
+function goolash () {
+
+ let picNum = Math.floor(Math.random()*(7 - 1) + 1);
+ console.log(picNum);
+if (picNum == 1) {
+ document.getElementById("chuckPic").src="images/chuck1.png";
+ 
+} else if (picNum == 2) {
+    document.getElementById("chuckPic").src="images/chuck2.png";
+
+} else if (picNum == 3) {
+    document.getElementById("chuckPic").src="images/chuck3.png";
+
+}  else if (picNum == 4) {
+    document.getElementById("chuckPic").src="images/chuck4.png";
+
+} else if (picNum == 5) {
+    document.getElementById("chuckPic").src="images/chuck5.png";
+
+} else if(picNum == 6) {
+    document.getElementById("chuckPic").src="images/chuck6.png";
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
 function refreshPage() {
     window.location.reload();
+  
+
 }
 
 
@@ -17,7 +55,8 @@ xhr.onreadystatechange = function() {
         console.log(joke.value);
 
         document.getElementById('content').innerHTML = joke.value;  // adds joke value to html (div)
-
+        goolash();
+        
     }
 }
 
@@ -27,3 +66,4 @@ xhr.send();
 
 
 console.log(xhr);
+
